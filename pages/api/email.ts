@@ -19,10 +19,10 @@ export default async function sendEmail(
   });
 
   let info = await transporter.sendMail({
-    from: `"GABRIEL DEV PORTFOLIO 🖥️" <${process.env.SMTP_USER}>`,
+    from: `"ALA TELECOM " <${process.env.SMTP_USER}>`,
     to: "gdeoliveira.1999@gmail.com, g.prado0102@gmail.com",
     replyTo: req.body.email,
-    subject: `PORTFOLIO - ${req.body.name}`,
+    subject: `Ala Telecom - ${req.body.name}`,
     text: req.body.message,
   });
 
